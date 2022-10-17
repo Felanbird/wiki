@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://wiki.chatterino.com/Help/">
       
       <link rel="icon" href="https://chatterino.com/logo.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.6">
     
     
       
@@ -19,7 +19,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7a952b86.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.20d9efc8.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
@@ -875,6 +875,15 @@ Try closing splits in Chatterino in order to fix this.</p>
 <ul>
 <li>You turning on the <code>Block Whispers from Strangers</code> option in your <a href="https://www.twitch.tv/settings/security">Twitch account security settings</a>.</li>
 <li>Your account is too new to be able to whisper users using IRC. If you wish to whisper a user, you must have that user follow your channel, then use the Twitch website to whisper the user. This was an IRC spam protection measure put in place by Twitch. This is not a Chatterino bug.</li>
+<li>
+<p>Starting in <a href="../Help/#what-is-nightly-and-how-to-use-install-it">nightly</a> <a href="https://github.com/Chatterino/chatterino2/commit/974a8f11b7e0ce27421fbc3018dc5fa7bd37c576">974a8f11</a> you are able to send whispers if you have a verified phone number attached to your Twitch account, this will allow you to bypass the previous limitation due to your account age.<br />
+<code>NOTE:</code> Phone Number Authentication is <strong>NOT</strong> the same thing as Two-Factor Authentication.</p>
+<ul>
+<li>You can add a phone number to your account in <a href="https://www.twitch.tv/settings/security">Twitch Settings.</a></li>
+<li>Once you have added a phone number, you can toggle the setting <code>Helix timegate /w behaviour</code> to <code>Always Use Helix</code>
+<img alt="/w_helix_timegate" src="https://user-images.githubusercontent.com/41973452/194681515-1f3eb3a8-f54c-41b2-884f-5e7a0d9f329c.png" /></li>
+</ul>
+</li>
 </ul>
 <h3 id="ffzbttv-emotes-are-not-working">FFZ/BTTV emotes are not working<a class="headerlink" href="#ffzbttv-emotes-are-not-working" title="Permanent link">&para;</a></h3>
 <p>You need to be logged in to see emotes.
@@ -907,14 +916,14 @@ If you still can't see it, ask fourtf on <a href="https://discord.gg/qq7DDxjste"
 <ol>
 <li>Go to <a href="https://github.com/Chatterino/chatterino2/releases/tag/nightly-build">nightly release page</a> on GitHub.</li>
 <li>Download nightly:<ul>
-<li>For <strong>Windows</strong> download <code>test-cmake-chatterino-windows-x86-64.zip</code></li>
-<li>For <strong>Linux</strong> download <code>test-cmake-Chatterino-x86_64.AppImage</code></li>
-<li>For <strong>Mac</strong> download <code>test-cmake-chatterino-osx.dmg</code></li>
+<li>For <strong>Windows</strong> download <code>chatterino-windows-x86-64.zip</code></li>
+<li>For <strong>Linux</strong> download <code>Chatterino-x86_64.AppImage</code></li>
+<li>For <strong>Mac</strong> download <code>chatterino-osx.dmg</code></li>
 </ul>
 </li>
 <li>Install nightly:<ul>
 <li>On <strong>Windows</strong>, right-click the archive &gt; <code>Extract All</code> &gt; <code>Extract</code> (Override files if prompted). Open the newly extracted folder and create a shortcut for the <code>chatterino.exe</code> file to the Desktop for easy access.</li>
-<li>On <strong>Linux</strong>, open up the download directory in your terminal and execute the following command <code>chmod +x test-cmake-Chatterino-x86_64.AppImage &amp;&amp; sudo mv test-cmake-Chatterino-x86_64.AppImage /usr/local/bin</code></li>
+<li>On <strong>Linux</strong>, open up the download directory in your terminal and execute the following command <code>chmod +x Chatterino-x86_64.AppImage &amp;&amp; sudo mv Chatterino-x86_64.AppImage /usr/local/bin</code></li>
 <li>On <strong>Mac</strong>, open the dmg file and drag Chatterino into the Applications folder.</li>
 </ul>
 </li>
@@ -932,7 +941,7 @@ If you still can't see it, ask fourtf on <a href="https://discord.gg/qq7DDxjste"
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 25, 2022 09:53:54</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 13, 2022 16:32:08</span>
       
     
   </small>
@@ -1040,7 +1049,7 @@ If you still can't see it, ask fourtf on <a href="https://discord.gg/qq7DDxjste"
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.top"], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.37e9125f.min.js"></script>
+      <script src="../assets/javascripts/bundle.078830c0.min.js"></script>
       
     
   </body>
